@@ -21,14 +21,12 @@ Next AutH ->  Authentication
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
 ## Dependencies
 
-npm i react-icons
-
+npm install react-icons zustand
+zustand: ligthweight global state management library
 
 ## Next.js resources:
 
