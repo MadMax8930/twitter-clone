@@ -27,6 +27,8 @@ yarn dev
 
 ## Dependencies
 
+npm i react-icons
+
 
 ## Next.js resources:
 
