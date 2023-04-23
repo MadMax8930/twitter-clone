@@ -25,8 +25,24 @@ npm run dev
 
 ## Dependencies
 
+npm install -D tailwindcss
+
+npx tailwind init
+
 npm install react-icons zustand
-zustand: ligthweight global state management library
+(zustand: ligthweight global state management library)
+npm install -D prisma
+
+npx prisma init
+
+After our models, to push them in db -> npx prisma db push
+
+Auth Controllers -> 
+
+npm install @prisma/client (+ folder : libs)
+npm install bcrypt -D @types/bcrypt
+npm install next-auth    
+npm install @next-auth/prisma-adapter     
 
 ## Next.js resources:
 
