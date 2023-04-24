@@ -1,6 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 
-// global variable not affected by hot-reload
+// global variable (not affected by hot-reloading)
 
 declare global {
    var prisma: PrismaClient | undefined;
