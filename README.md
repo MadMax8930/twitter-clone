@@ -42,7 +42,10 @@ Auth Controllers ->
 npm install @prisma/client (+ folder : libs)
 npm install bcrypt -D @types/bcrypt
 npm install next-auth    
-npm install @next-auth/prisma-adapter     
+npm install @next-auth/prisma-adapter   
+npm install swr
+npm install axios
+npm install react-hot-toast
 
 ## Next.js resources:
 
