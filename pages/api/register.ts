@@ -16,7 +16,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
            email,
            username,
            name,
-           hashedPassword,
+           hashedPassword
         }
      });
      return res.status(201).json(user);  
