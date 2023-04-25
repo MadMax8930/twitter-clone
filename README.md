@@ -46,10 +46,23 @@ npm install @next-auth/prisma-adapter
 npm install swr
 npm install axios
 npm install react-hot-toast
+npm install react-spinners
+ npm install date-fns
 
 ## Next.js resources:
 
 - [Next.js Documentation](https://nextjs.org/docs)
+
+## SWR
+[SWR Documentation](https://swr.vercel.app/docs/getting-started)
+
+// Swr will fetch the currentuser
+// Store it in the global store
+// Reuse this hook => not gonna refetch every time the data
+// It will take a look and see if data exists
+// And it will decide whether data needs to be re-validated and fetched again
+
+// -> Replaces the global state like Redux (Great Lib for fetching)
 
 ## Project Deployed
 
