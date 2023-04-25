@@ -1,71 +1,58 @@
-[Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`] under Typescript with ESLint and Tailwind
+## Twitter Clone with [`Next.js`] in React Typescript (100% fully responsive)
+Node version 16.13
 
-## Twitter Clone with fully auth system (fully responsive)
+### User will be able to:
 
-React TS -> FrontEnd
-Next -> Routing & Server Side rendering
-Tailwind -> CSS Management
-Prisma -> Data Management
-MongoDB -> Backend Storage
-Next AutH ->  Authentication
-
+- Authenticate
 - Post tweets
 - Reply to tweets
-- Like tweets -> with notification trigger
-- Follow other users -> with notification trigger
-- Being notigied when their content is liked or replied to
-- Post tweets shown on their profile page
+- Like tweets (with notification trigger)
+- Follow other users (with notification trigger)
 - Edit name, bio, profile cover with file upload
 
-## Run the development server:
+### Run server:
 
 ```bash
 npm run dev
+# or
+yarn dev
 ```
 
-## Dependencies
+### Dependencies
 
-npm install -D tailwindcss
+```bash
+npm install -D tailwindcss -D prisma @prisma/client bcrypt -D @types/bcrypt next-auth @next-auth/prisma-adapter swr axios zustand react-icons react-hot-toast react-spinners date-fns react-dropzone
+```
 
-npx tailwind init
+### Development framework:
+[Next.js documentation](https://nextjs.org/docs) for routing & server side rendering
 
-npm install react-icons zustand
-(zustand: ligthweight global state management library)
-npm install -D prisma
+### Authentication:
+[NextAuth.js documentation](https://next-auth.js.org/configuration/nextjs#getserversession) for more details
 
-npx prisma init
+### CSS Management:
+[Tailwind documentation](https://tailwindcss.com/docs/guides/nextjs) for styling
 
-After our models, to push them in db -> npx prisma db push
+### ORM Library:
+[Prisma documentation](https://www.prisma.io/docs/getting-started) for data management
 
-Auth Controllers -> 
+- Init ORM: npx prisma init
+- Format models: npx prisma format
+- Migrate schema changes: npx prisma migrate 
+- Push modals to db : npx prisma db push
 
-npm install @prisma/client (+ folder : libs)
-npm install bcrypt -D @types/bcrypt
-npm install next-auth    
-npm install @next-auth/prisma-adapter   
-npm install swr
-npm install axios
-npm install react-hot-toast
-npm install react-spinners
- npm install date-fns
+### Backend Storage:
+[MongoDB Atlas documentation](https://www.mongodb.com/atlas) for free database solution
 
-## Next.js resources:
+### Global Store Management Library:
+[SWR documentation](https://swr.vercel.app/docs/getting-started) for more details <br />
 
-- [Next.js Documentation](https://nextjs.org/docs)
+This library will fetch data. Store it in the global store.
+The great thing is that the reuse of swr hooks, will not going to re-fetch the data.
+It will take a look, see if data exists in a cache, and it will decide whether data needs to be re-validated and fetched again. In my opinion, it's a good alternative to Redux Toolkit.
 
-## SWR
-[SWR Documentation](https://swr.vercel.app/docs/getting-started)
+### Lightweight Store Management Library:
+[Zustand documentation](https://docs.pmnd.rs/zustand/getting-started/introduction) for modals
 
-// Swr will fetch the currentuser
-// Store it in the global store
-// Reuse this hook => not gonna refetch every time the data
-// It will take a look and see if data exists
-// And it will decide whether data needs to be re-validated and fetched again
-
-// -> Replaces the global state like Redux (Great Lib for fetching)
-
-## Project Deployed
-
-
-
-
+### Deployment
+[Project deployed](https://clone-next-twitter.netlify.app) on Vercel.
