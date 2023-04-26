@@ -1,6 +1,6 @@
 import Image from "next/image";
-import useUser from "@/hooks/useUser";
 import Avatar from "@/components/Avatar";
+import useUser from "@/hooks/useUser";
 
 interface UserHeroProps {
    userId: string;
@@ -20,8 +20,8 @@ const UserHero: React.FC<UserHeroProps> = ({ userId }) => {
                style={{ objectFit: 'cover' }}
             />
          )}
-         <div className="absolute -bottom-16 left-4">
-            <Avatar userId={userId} isLarge hasBorder />
+         <div className="absolute -bottom-16 left-4 rounded-full hover:bg-black">
+            <Avatar userId={userId} isLarge hasBorder/>
          </div>
       </div>
     </div>

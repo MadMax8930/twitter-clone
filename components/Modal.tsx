@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import Button from "./Button";
+import Button from "@/components/Button";
 
 interface ModalProps {
    isOpen?: boolean;

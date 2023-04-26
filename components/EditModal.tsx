@@ -1,11 +1,11 @@
 import { useState, useEffect, useCallback } from "react";
+import { toast } from "react-hot-toast";
+import Modal from "@/components/Modal";
+import Input from "@/components/Input";
+import ImageUpload from "@/components/ImageUpload";
 import useCurrentUser from "@/hooks/useCurrentUser";
 import useEditModal from "@/hooks/useEditModal";
 import useUser from "@/hooks/useUser";
-import Modal from "@/components/Modal";
-import ImageUpload from "@/components/ImageUpload";
-import Input from "@/components/Input";
-import { toast } from "react-hot-toast";
 import axios from "axios";
 
 const EditModal = () => {
