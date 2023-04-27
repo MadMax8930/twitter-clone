@@ -10,7 +10,7 @@ const usePosts = (userId?: string) => {
     error,
     isLoading,
     mutate
-  };
+  }
 };
 
 export default usePosts;
