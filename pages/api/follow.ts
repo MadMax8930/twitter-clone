@@ -8,7 +8,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
    }
 
    try {
-     const { userId } = req.body;
+     const { userId } = req.method === 'POST' ? req.body : req.method === 'DELETE' ? req.query : null;
      const { currentUser } = await serverAuth(req, res);
 
      if (!userId || typeof userId !== 'string') throw new Error('Invalid ID');
@@ -21,10 +21,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
      if (!user) throw new Error('Invalid ID');
      
-     let arr = [...(user.followingIds || [])];
+     let arr = [...(currentUser.followingIds || [])];  // Following User IDs Array
 
      if (req.method === 'POST') {
-       arr.push(userId);
+       arr = arr.filter(followingId => followingId !== currentUser.id);
+       arr.push(userId)
      }
 
      if (req.method === 'DELETE') {

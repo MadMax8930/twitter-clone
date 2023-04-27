@@ -16,7 +16,7 @@ const useFollow = (userId: string) => {
     const list = currentUser?.followingIds || [];
 
     return list.includes(userId);
-  }, [userId, currentUser?.followingIds]);
+  }, [currentUser, userId]);
 
   const toggleFollow = useCallback(async () => {
      // Check if we are logged in or not
@@ -26,7 +26,7 @@ const useFollow = (userId: string) => {
       let request;  // differentiate follow or un-follow the user
 
       if (isFollowing) {
-         request = () => axios.delete('/api/follow', { data: { userId } });
+         request = () => axios.delete('/api/follow', { params: { userId } });
       } else {
          request = () => axios.post('/api/follow', { userId });
       }
