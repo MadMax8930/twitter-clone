@@ -1,4 +1,4 @@
-## Twitter Clone with [`Next.js`] and React Typescript (fully responsive)
+## MyTwittah Clone made with [`Next.js`] & React Typescript (fully responsive)
 Node version 16.13
 
 ### User will be able to:
@@ -55,4 +55,4 @@ It will take a look, see if data exists in a cache, and it will decide whether d
 [Zustand documentation](https://docs.pmnd.rs/zustand/getting-started/introduction) for modals
 
 ### Deployment
-[Project deployed](https://next-twittah.netlify.app) on Vercel.
+[Project deployed](https://mytwittah.vercel.app) on Vercel.
