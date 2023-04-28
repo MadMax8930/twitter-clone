@@ -1,4 +1,4 @@
-## Twitter Clone with [`Next.js`] in React Typescript (100% fully responsive)
+## Twitter Clone with [`Next.js`] and React Typescript (fully responsive)
 Node version 16.13
 
 ### User will be able to:
