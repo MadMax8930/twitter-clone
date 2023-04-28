@@ -1,5 +1,5 @@
 import Sidebar from "@/components/Sidebar";
-import Followbar from "@/components/FollowBar";
+import Followbar from "@/components/Followbar";
 
 
 interface LayoutProps {
