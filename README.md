@@ -55,4 +55,4 @@ It will take a look, see if data exists in a cache, and it will decide whether d
 [Zustand documentation](https://docs.pmnd.rs/zustand/getting-started/introduction) for modals
 
 ### Deployment
-[Project deployed](https://clone-next-twitter.netlify.app) on Vercel.
+[Project deployed](https://next-twittah.netlify.app) on Vercel.
